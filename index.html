@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Protected File</title>
+</head>
+<body>
+    <h1>Enter Password to Access File</h1>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">Submit</button>
+    <p id="message"></p>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "ps123") {
+                window.location.href = "https://youtu.be/z63jDtpH2yY?si=SUypi6D1LmhAj1so";
+            } else {
+                document.getElementById("message").innerText = "Incorrect password. Please try again.";
+            }
+        }
+    </script>
+</body>
+</html>
